@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+
+    background: #000 url('../img/bg.jpg') no-repeat center;
+    -Webkit-background-size: cover;
+    background-size: cover;
+
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+    /*=======HEADER=========*/
+.header {
+    padding: 10px;
+    width: 100%;
+
+    background-color: #2B7DED;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-brand {
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+
+    margin-right: 15px;
+    transition: color .2s linear;
+
+}
+
+.nav-link:hover {
+    color: darkslategray;
+}
+
+.nav-link.active {
+    position: relative;
+}
+
+.nav-link.active:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+
+    background-color: white;
+
+    position: absolute;
+    bottom: -5px;
+    left: 1px;
+}
+
+
+    /*=======Content=========*/
+.main {
+    margin-top: 100px;
+
+    max-width: 700px;
+    width: 100%;
+
+    color: white;
+
+
+}
+
+.first-title {
+    opacity: 60%;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.second-title {
+    margin-bottom: 35px;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.second-title span {
+    color: #2B7DED;
+}
+
+.main-text {
+    margin-bottom: 70px;
+}
+
+.btn {
+    padding: 10px 40px;
+
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+
+    background-color: #2B7DED;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: #2365bf;
+}
+
+.btn:active {
+    background-color: #174788;
+}
+    /*=======end/content=========*/
+
+
+    /*=======Footer=========*/
+
+    /*=======end/footer=========*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
