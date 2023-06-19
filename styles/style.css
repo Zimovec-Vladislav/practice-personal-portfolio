@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.page {
+    width: 100%;
+    height: 100vh;
+    background: #000 url('../img/bg.jpg') center no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+
+/*Header=========
+===============*/
+.header {
+    padding: 1rem;
+    background-color: #2B7DED;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-init {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-brand {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav-link {
+    margin-right: 1rem;
+    color: white;
+    text-decoration: none;
+
+    font-weight: 500;
+    transition: color .2s linear;
+}
+
+.header-nav-link:hover {
+    color: deeppink;
+}
+
+.header-nav-link.active {
+    position: relative;
+}
+
+.header-nav-link.active:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: white;
+
+    position: absolute;
+    bottom: -3px;
+    left: 1px;
+}
+
+/*Main=========
+===============*/
+
+.content {
+    margin-top: 105px;
+
+    width: 700px;
+    color: white;
+}
+
+.subtitle {
+    font-size: 21px;
+    font-weight: 300;
+    opacity: 60%;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.title span{
+    color: #2B7DED;
+}
+
+.text {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.text p{
+    font-weight: 400;
+}
+
+.btn {
+    font-weight: 500;
+    padding: 10px 40px;
+
+    background-color: #2B7DED;
+    border-radius: 5px;
+
+    text-decoration: none;
+    color: white;
+
+    transition: color .2s linear;
+}
+
+.btn:hover {
+    background-color: #266ed0;
+}
+
+.btn:active {
+    background-color: #1e5cb2;
+}
+
+
+/*Footer=========
+===============*/
+.footer {
+    width: 100%;
+
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+}
+
+.contacts a{
+    margin-right: 50px;
+}
+
+.contacts img{
+    margin-right: 10px;
+}
+
+.contacts-link{
+    color: white;
+    text-decoration: none;
+}
+
+.contacts-link:hover{
+    text-decoration: underline;
+}
+
+.contacts-link.tel {
+    position: relative;
+}
+
+.contacts-link.tel:after{
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: white;
+
+    pointer-events: none;
+
+    position: absolute;
+    bottom: 50%;
+    right: -130px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
