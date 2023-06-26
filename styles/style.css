@@ -85,9 +85,9 @@ h1, h2, h3, h4, h5, h6 {
     left: 1px;
 }
 
+
 /*Main=========
 ===============*/
-
 .content {
     margin-top: 105px;
 
@@ -119,6 +119,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+.text-contacts,
+.text-contacts p{
+    margin-top: 0;
+}
+
+.text-contacts {
+    margin-bottom: 30px;
+}
+
 .btn {
     font-weight: 500;
     padding: 10px 40px;
@@ -130,6 +139,8 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 
     transition: color .2s linear;
+
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -140,6 +151,9 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #1e5cb2;
 }
 
+.btn-contacts {
+    width: 100%;
+}
 
 /*Footer=========
 ===============*/
@@ -191,8 +205,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/*Form=========
+===============*/
 
+.form {
+    max-width: 280px;
+    width: 100%;
+}
 
+.input,
+.textarea {
+    display: block;
+    width: 100%;
+
+    padding: 10px 18px;
+    margin-bottom: 20px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+
+    border: 0;
+    border-radius: 3px;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    opacity: 1;
+    color: white;
+}
+
+.textarea {
+    height: 100px;
+    resize: none;
+}
+
+.btn-form {
+    width: 100%;
+
+    border: 0;
+}
 
 
 
