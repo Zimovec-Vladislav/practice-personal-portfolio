@@ -38,6 +38,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .header-init {
@@ -247,6 +248,59 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 
     border: 0;
+}
+
+/*Media=========
+===============*/
+
+@media (max-width: 1200px) {
+    .page {
+        min-height: 100vh; /*?*/
+        height: auto; /*?*/
+        padding-bottom: 2rem;
+    }
+
+/*
+    .content {
+        max-width: none;
+        margin-bottom: 50px;
+    }
+*/
+
+    .
+}
+
+@media (max-width: 585px) {
+
+    /* HEADER */
+    .header-logo {
+        display: none;
+    }
+
+    .header-init {
+        flex-direction: column;
+    }
+
+    .header-brand {
+        font-size: 19px;
+    }
+
+    /* CONTENT */
+
+
+}
+
+@media (max-width: 450px) {
+
+    /* HEADER */
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .header-brand {
+        margin-bottom: 1rem;
+    }
+
 }
 
 
