@@ -17,9 +17,15 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+p {
+    margin: 0 0 10px;
+}
+
 .page {
     width: 100%;
     height: 100vh;
+    min-height: 770px;
+
     background: #000 url('../img/bg.jpg') center no-repeat;
     background-size: cover;
 
@@ -30,13 +36,13 @@ h1, h2, h3, h4, h5, h6 {
 /*Header=========
 ===============*/
 .header {
-    padding: 1rem;
+    padding: 1rem 0;
     background-color: #2B7DED;
 }
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -92,9 +98,14 @@ h1, h2, h3, h4, h5, h6 {
 .content {
     margin-top: 105px;
 
-    width: 700px;
+    max-width: 700px;
+    width: 100%;
     color: white;
 }
+
+.content-header {
+    margin-bottom: 36px;
+} /* ? */
 
 .subtitle {
     font-size: 21px;
@@ -131,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn {
     font-weight: 500;
-    padding: 10px 40px;
+    padding: 12px 35px;
 
     background-color: #2B7DED;
     border-radius: 5px;
@@ -182,6 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 .contacts-link{
     color: white;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .contacts-link:hover{
@@ -250,6 +262,8 @@ h1, h2, h3, h4, h5, h6 {
     border: 0;
 }
 
+
+
 /*Media=========
 ===============*/
 
@@ -260,19 +274,56 @@ h1, h2, h3, h4, h5, h6 {
         padding-bottom: 2rem;
     }
 
-/*
     .content {
         max-width: none;
         margin-bottom: 50px;
-    }
-*/
 
-    .
+        text-align: center;
+    }
 }
+
+
+
+@media (max-width: 732px) {
+
+/* HEADER */
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .header-brand {
+        margin-bottom: 1rem;
+    }
+
+    .content-header {
+        text-align: center;
+    }
+
+
+/* CONTENT */
+    .content {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .contacts-link.tel:after{
+        display: none;
+    }
+
+
+/* Form */
+    .form {
+        margin: 0 auto;
+    }
+
+
+}
+
+
 
 @media (max-width: 585px) {
 
-    /* HEADER */
+/* HEADER */
     .header-logo {
         display: none;
     }
@@ -285,23 +336,27 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 19px;
     }
 
-    /* CONTENT */
 
+/* FOOTER */
+    .footer {
+        position: static;
+    }
+
+    .contacts {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contacts a{
+        margin-right: 0;
+    }
+
+    .contacts-link {
+        margin-bottom: 5px;
+    }
 
 }
 
-@media (max-width: 450px) {
-
-    /* HEADER */
-    .header {
-        margin-bottom: 50px;
-    }
-
-    .header-brand {
-        margin-bottom: 1rem;
-    }
-
-}
 
 
 
